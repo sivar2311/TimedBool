@@ -3,22 +3,22 @@
 class TimedBool {
   public:
     TimedBool();
-    TimedBool(unsigned long duration);
-    TimedBool(unsigned long duration, bool state);
+    TimedBool(unsigned long expiration);
+    TimedBool(unsigned long expiration, bool value);
 
-    void setDuration(unsigned long duration);
-    unsigned long getDuration();
+    void setExpiration(unsigned long expiration);
+    unsigned long getExpiration();
 
-    void setState(bool state);
-    bool getState();
+    void setValue(bool value);
+    bool vetValue();
 
     operator bool();
-    TimedBool& operator=(bool state);
+    TimedBool& operator=(bool value);
   protected:
     void validate();
 
   protected:
-    bool _state;
+    bool _value;
     unsigned long _start;
-    unsigned long _duration;
+    unsigned long _expiration;
 };

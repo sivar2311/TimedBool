@@ -1,3 +1,17 @@
 {
-
+  "name" : "TimedBool",
+  "version" : "0.0.1",
+  "description" : "Boolean that flip its state after a given amount of time",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github/sivar2311/TimedBool.git"
+  },
+  "authors" : {
+    "name" : "Boris Jaeger",
+    "maintainer" : true
+  },
+  "frameworks" : ["arduino"],
+  "platforms" : "*",
+  "headers" : "TimedBool.h",
+  "examples" : "examples/basic/main.cpp"
 }
