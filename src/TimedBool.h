@@ -10,7 +10,7 @@ class TimedBool {
     unsigned long getExpiration();
 
     void setValue(bool value);
-    bool vetValue();
+    bool getValue();
 
     operator bool();
     TimedBool& operator=(bool value);
